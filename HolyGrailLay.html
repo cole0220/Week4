@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+
+        <header>This element does not have any explicit position property defined. This means it is positioned according to the normal flow of the document. The margin: 25px creates space around it. Its position is determined by its natural place in the document flow and the margins applied around it.</header>
+    
+        <nav>This element has position: fixed, which means it is positioned relative to the viewport. The top: 170px and left: 35px properties ensure it remains fixed at 170 pixels from the top and 35 pixels from the left edge of the viewport.</nav>
+    
+        <div>
+    
+            <div class="articles">
+    
+                <article>This element uses position: relative, which positions it relative to its normal position in the document flow. The top: 15px property shifts it 15 pixels downward from where it would normally be.</article>
+    
+                <article>This container is positioned relative, meaning it is positioned according to its normal position with additional offsets. The left: 30px and top: 45px properties shift it 30 pixels to the right and 45 pixels down from its normal position.</article>
+    
+            </div>
+    
+        <aside>This element is set to position: absolute, which means it is positioned relative to the nearest positioned ancestor. The left: 50%, right: 10%, and top: 235px properties place it 50% from the left edge of the containing block, 10% from the right edge, and 235 pixels from the top, ensuring it fits within the given dimensions.</aside>
+    
+        </div>
+    
+        <footer>With position: fixed, the footer is anchored to the bottom of the viewport due to bottom: 0px, ensuring it is always visible at the bottom.</footer>
+    
+        <style>
+    
+            header {
+    
+                width: 90%;
+    
+                height: 100px;
+    
+                background-color: #3546E8;
+    
+                border: 3px solid #000000;
+    
+                padding: 10px;
+    
+                margin: 25px;
+    
+            }
+    
+            nav {
+    
+                position: fixed;
+    
+                width: 90%;
+    
+                height: 50px;
+    
+                background-color: #838CE8;
+    
+                position: fixed;
+    
+                top: 170px;
+    
+                left: 35px;
+    
+            }
+    
+            article {
+    
+                width: 65%;
+    
+                height: 200px;
+    
+                background-color: #3546E8;
+    
+                border: 5px solid #000000;
+    
+                position: relative;
+    
+                top: 15px;
+    
+            }
+    
+            aside {
+    
+                width: 40%;
+    
+                height: 420px;
+    
+                background-color: #838CE8;
+    
+                position: absolute;
+    
+                left: 50%;
+    
+                right: 10%;
+    
+                top: 235px;
+    
+            }
+    
+            footer {
+    
+                width: 100%;
+    
+                height: 50px;
+    
+                background-color: #3546E8;
+    
+                position: fixed;
+    
+                bottom: 0px;
+    
+            }
+    
+            .articles {
+    
+                position: relative;
+    
+                left: 30px;
+    
+                top: 45px;
+    
+                width: 65%;
+    
+                height: 70%;
+    
+            }
+    
+        </style>
+</html>
